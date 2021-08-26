@@ -8,7 +8,7 @@ const app = express();
 //   res.send({ bye:'buddy' });
 // });
 passport.use(new GoogleStrategy({
-  cliendID: keys.googleusercontent,
+  clientID: keys.googleusercontent,
   clientSecret: keys.googleClientSecret,
   callbackURL: '/auth/google/callback'
 },
